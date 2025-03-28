@@ -7,7 +7,9 @@ const app = express();
 const http = require('http');
 const httpServer = http.createServer(app);
 
-const DBurl = 'mongodb://127.0.0.1:27017/contact-list';
+//const DBurl = 'mongodb://127.0.0.1:27017/contact-list';
+
+const DBurl = 'mongodb+srv://123:456@cluster0.flrz1.mongodb.net/mydb?retryWrites=true&w=majority&appName=Cluster0/contact-list';
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
